@@ -1,0 +1,10 @@
+# Core dependencies
+mkdocs
+mkdocs-material>=9.0.0
+mkdocs-awesome-pages-plugin>=2.8.0
+
+# Python packages
+PyYAML>=6.0.0
+
+# Development dependencies
+pip-tools>=7.0.0  # For managing requirements.txt
