@@ -52,3 +52,11 @@ Cytoskeleton is a key component to ensure a _dynamic rigidity_ in the cell, it i
 - **Microtubules**: constituted by 13 hetero-dimeric chains of $\alpha$ and $\beta$ tubuline
 - **Intermediate filaments**: helicoidal filaments constituted by various proteins 
 - **Nanotubules**: smaller filaments constituted by actin, revolving in an helicoidal fashion (a pseudo-double helix, or coiled-coil) 
+
+Filaments are polymerized following this workflow:
+
+- **Nucleation/organizing centers** (for tubuline are generally $\gamma$-tubuline) around which the first pieces of the filaments are assembled
+- With a positive feedback-like chain of reactions, the **polymerization** phase takes place and shapes up the tubule
+- The tubule reaches a dynamic equilibrium status (**stationary phase**) where the velocity of the depolymerization is the same of the one of polymerization.
+
+Microtubules and nanotubules are assembled in a **dynamic equilibrium** setting where monomers are added to one end of the filament (polymerization end) and they are subtracted at the other end (depolymerization end). When the velocity of polymerization is higher than that of depolymerization, the concentration of monomers (tubuline, actin...) decreases and the filaments get enlongated, while when depolymerization dominates the concentration of monomers increases. This delicate equilibrium is crucial in numerous processes, from movement to shaping the cell. 
