@@ -1,6 +1,6 @@
 ## 1. From nucleotides to DNA
 
-In the [last post](./Day_1) we saw that nucleotides are the **building blocks of DNA and RNA**, and are constituted by:
+In the [last post](./Day_1.md) we saw that nucleotides are the **building blocks of DNA and RNA**, and are constituted by:
 
 - A pentose sugar (ribose or deoxyribose)
 - A nucleobase (purine - A and G - or pyrimidine - C, T and U)
