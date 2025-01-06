@@ -1,0 +1,1109 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Plant_Physiology/Day_2/">
+      
+      
+        <link rel="next" href="../../Rust/Day_1/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Day 1 - Academic Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-introduction-to-ruby" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Academic Notes" class="md-header__button md-logo" aria-label="Academic Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Academic Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Day 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Molecular_Biology/Day_1/" class="md-tabs__link">
+          
+  
+  Molecular_Biology
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Plant_Physiology/Day_1/" class="md-tabs__link">
+          
+  
+  Plant_Physiology
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Ruby
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Rust/Day_1/" class="md-tabs__link">
+          
+  
+  Rust
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../contributing/" class="md-tabs__link">
+        
+  
+    
+  
+  Contributing
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Academic Notes" class="md-nav__button md-logo" aria-label="Academic Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Academic Notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Molecular_Biology
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Molecular_Biology
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Molecular_Biology/Day_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Day 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Molecular_Biology/Day_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Day 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Plant_Physiology
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Plant_Physiology
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plant_Physiology/Day_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Day 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plant_Physiology/Day_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Day 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Ruby
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Ruby
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Day 1
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Day 1
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction-to-ruby" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introduction to Ruby
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-hello-world-and-maths" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Hello World and Maths
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-define-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Define methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-define-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Define classes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-more-advanced-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. More advanced example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Rust
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Rust
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Rust/Day_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Day 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction-to-ruby" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introduction to Ruby
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-hello-world-and-maths" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Hello World and Maths
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-define-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Define methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-define-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Define classes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-more-advanced-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. More advanced example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Day 1</h1>
+
+<blockquote>
+<p><em>This page is based on the official <a href="https://www.ruby-lang.org/en/documentation/quickstart/">Ruby quickstart</a></em></p>
+</blockquote>
+<h2 id="1-introduction-to-ruby">1. Introduction to Ruby</h2>
+<p>Install Ruby for Ubuntu with:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>ruby-full
+</code></pre></div>
+<p>And check the version with:</p>
+<div class="highlight"><pre><span></span><code>ruby<span class="w"> </span>-v
+</code></pre></div>
+<p>You can start an interactive shell:</p>
+<div class="highlight"><pre><span></span><code>irb<span class="w"> </span><span class="c1">#interactive ruby</span>
+</code></pre></div>
+<h2 id="2-hello-world-and-maths">2. Hello World and Maths</h2>
+<p>Write your first Hello World with</p>
+<div class="highlight"><pre><span></span><code><span class="nb">puts</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
+</code></pre></div>
+<p>This function will return <code>=&gt; nil</code>, which is the Ruby equivalent of python <code>None</code></p>
+<p>You can use also arithmetic operations such as:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># sum</span>
+<span class="mi">5</span><span class="o">+</span><span class="mi">5</span>
+<span class="mi">7</span><span class="o">-</span><span class="mi">3</span>
+<span class="c1"># multiplication</span>
+<span class="mi">3</span><span class="o">*</span><span class="mi">2</span>
+<span class="c1"># power</span>
+<span class="mi">3</span><span class="o">**</span><span class="mi">2</span>
+<span class="c1"># division</span>
+<span class="mi">4</span><span class="o">/</span><span class="mi">2</span>
+<span class="c1"># other mathematical operations</span>
+<span class="no">Math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span><span class="w"> </span><span class="c1"># -&gt; 3</span>
+<span class="no">Math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">3</span><span class="o">.</span><span class="mi">14</span><span class="p">)</span><span class="w"> </span><span class="c1"># -&gt; 0</span>
+</code></pre></div>
+<h2 id="3-define-methods">3. Define methods</h2>
+<p>Methods are the equivalent of functions in python:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">hi</span>
+<span class="w">    </span><span class="nb">puts</span><span class="w"> </span><span class="s2">&quot;Hello world!&quot;</span>
+<span class="k">end</span>
+
+<span class="c1"># call the method:</span>
+<span class="n">hi</span><span class="p">()</span>
+</code></pre></div>
+<p>You can also define parameters for a function:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">puts</span><span class="w"> </span><span class="s2">&quot;Hello </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="c1"># this is the Ruby way to do formatted strings</span>
+<span class="k">end</span>
+</code></pre></div>
+<p><code>name</code> can also be given a default value and/or capitalized:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">hi</span><span class="p">(</span><span class="nb">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;clelia&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">puts</span><span class="w"> </span><span class="s2">&quot;Hello </span><span class="si">#{</span><span class="nb">name</span><span class="o">.</span><span class="n">capitalize</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">end</span>
+
+<span class="n">hi</span><span class="p">()</span><span class="w"> </span><span class="c1"># -&gt; &quot;Hello Clelia&quot;</span>
+<span class="n">hi</span><span class="p">(</span><span class="s2">&quot;chris&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1"># -&gt; &quot;Hello Chris&quot;</span>
+</code></pre></div>
+<h2 id="4-define-classes">4. Define classes</h2>
+<p>Classes are not different in their syntax from python:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Greetings</span>
+<span class="w">    </span><span class="k">def</span><span class="w"> </span><span class="nf">initialize</span><span class="p">(</span><span class="nb">name</span><span class="o">=</span><span class="s2">&quot;World&quot;</span><span class="p">)</span>
+<span class="w">        </span><span class="vi">@name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">name</span><span class="w"> </span><span class="c1"># @ is like self in python</span>
+<span class="w">    </span><span class="k">end</span>
+<span class="w">    </span><span class="k">def</span><span class="w"> </span><span class="nf">say_hi</span>
+<span class="w">        </span><span class="s2">&quot;Hi </span><span class="si">#{</span><span class="vi">@name</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="w">    </span><span class="k">end</span>
+<span class="w">    </span><span class="k">def</span><span class="w"> </span><span class="nf">say_bye</span>
+<span class="w">        </span><span class="s2">&quot;Bye </span><span class="si">#{</span><span class="vi">@name</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="w">    </span><span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c1"># set the object as in python</span>
+<span class="n">greeter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">Greetings</span><span class="p">(</span><span class="s2">&quot;Pat&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>But there is a core difference with python itself: you cannot get the attribute <code>name</code> unless you explicitly set it as an attribute inside the class. You can do it by actually modifying the class:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># See all instance methods</span>
+<span class="no">Greetings</span><span class="o">.</span><span class="n">instance_methods</span>
+<span class="c1"># See only the instance methods you defined</span>
+<span class="no">Greetings</span><span class="o">.</span><span class="n">instance_methods</span><span class="p">(</span><span class="kp">false</span><span class="p">)</span><span class="w"> </span><span class="c1"># no ancestral methods</span>
+<span class="c1"># Re-open and modify the class</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Greetings</span>
+<span class="w">    </span><span class="kp">attr_accessor</span><span class="w"> </span><span class="ss">:name</span>
+<span class="k">end</span>
+
+<span class="c1"># Check if the class responds to the name attribute</span>
+<span class="n">greeter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">Greetings</span><span class="p">(</span><span class="s2">&quot;Pat&quot;</span><span class="p">)</span>
+
+<span class="n">greeter</span><span class="o">.</span><span class="n">respond_to?</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1"># get name</span>
+<span class="n">greeter</span><span class="o">.</span><span class="n">respond_to?</span><span class="p">(</span><span class="s2">&quot;name=&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1"># set name</span>
+
+<span class="c1"># Set a new class object</span>
+<span class="n">greeter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">Greetings</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Andy&quot;</span><span class="p">)</span>
+<span class="c1"># Set a new name</span>
+<span class="n">greeter</span><span class="o">.</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Anne&quot;</span>
+</code></pre></div>
+<h2 id="5-more-advanced-example">5. More advanced example</h2>
+<p>Let's take a look to an advanced example:</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env ruby</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MegaGreeter</span>
+<span class="w">  </span><span class="kp">attr_accessor</span><span class="w"> </span><span class="ss">:names</span>
+
+<span class="w">  </span><span class="c1"># Create the object</span>
+<span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">initialize</span><span class="p">(</span><span class="n">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;World&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="vi">@names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">names</span>
+<span class="w">  </span><span class="k">end</span>
+
+<span class="w">  </span><span class="c1"># Say hi to everybody</span>
+<span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">say_hi</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="vi">@names</span><span class="o">.</span><span class="n">nil?</span>
+<span class="w">      </span><span class="nb">puts</span><span class="w"> </span><span class="s2">&quot;...&quot;</span>
+<span class="w">    </span><span class="k">elsif</span><span class="w"> </span><span class="vi">@names</span><span class="o">.</span><span class="n">respond_to?</span><span class="p">(</span><span class="s2">&quot;each&quot;</span><span class="p">)</span>
+<span class="w">      </span><span class="c1"># @names is a list of some kind, iterate!</span>
+<span class="w">      </span><span class="vi">@names</span><span class="o">.</span><span class="n">each</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="o">|</span><span class="nb">name</span><span class="o">|</span>
+<span class="w">        </span><span class="nb">puts</span><span class="w"> </span><span class="s2">&quot;Hello </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">!&quot;</span>
+<span class="w">      </span><span class="k">end</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">      </span><span class="nb">puts</span><span class="w"> </span><span class="s2">&quot;Hello </span><span class="si">#{</span><span class="vi">@names</span><span class="si">}</span><span class="s2">!&quot;</span>
+<span class="w">    </span><span class="k">end</span>
+<span class="w">  </span><span class="k">end</span>
+
+<span class="w">  </span><span class="c1"># Say bye to everybody</span>
+<span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">say_bye</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="vi">@names</span><span class="o">.</span><span class="n">nil?</span>
+<span class="w">      </span><span class="nb">puts</span><span class="w"> </span><span class="s2">&quot;...&quot;</span>
+<span class="w">    </span><span class="k">elsif</span><span class="w"> </span><span class="vi">@names</span><span class="o">.</span><span class="n">respond_to?</span><span class="p">(</span><span class="s2">&quot;join&quot;</span><span class="p">)</span>
+<span class="w">      </span><span class="c1"># Join the list elements with commas</span>
+<span class="w">      </span><span class="nb">puts</span><span class="w"> </span><span class="s2">&quot;Goodbye </span><span class="si">#{</span><span class="vi">@names</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="p">)</span><span class="si">}</span><span class="s2">.  Come back soon!&quot;</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">      </span><span class="nb">puts</span><span class="w"> </span><span class="s2">&quot;Goodbye </span><span class="si">#{</span><span class="vi">@names</span><span class="si">}</span><span class="s2">.  Come back soon!&quot;</span>
+<span class="w">    </span><span class="k">end</span>
+<span class="w">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+
+<span class="k">if</span><span class="w"> </span><span class="bp">__FILE__</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="vg">$0</span>
+<span class="w">  </span><span class="n">mg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">MegaGreeter</span><span class="o">.</span><span class="n">new</span>
+<span class="w">  </span><span class="n">mg</span><span class="o">.</span><span class="n">say_hi</span>
+<span class="w">  </span><span class="n">mg</span><span class="o">.</span><span class="n">say_bye</span>
+
+<span class="w">  </span><span class="c1"># Change name to be &quot;Zeke&quot;</span>
+<span class="w">  </span><span class="n">mg</span><span class="o">.</span><span class="n">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Zeke&quot;</span>
+<span class="w">  </span><span class="n">mg</span><span class="o">.</span><span class="n">say_hi</span>
+<span class="w">  </span><span class="n">mg</span><span class="o">.</span><span class="n">say_bye</span>
+
+<span class="w">  </span><span class="c1"># Change the name to an array of names</span>
+<span class="w">  </span><span class="n">mg</span><span class="o">.</span><span class="n">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Albert&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Brenda&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Charles&quot;</span><span class="p">,</span>
+<span class="w">              </span><span class="s2">&quot;Dave&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Engelbert&quot;</span><span class="o">]</span>
+<span class="w">  </span><span class="n">mg</span><span class="o">.</span><span class="n">say_hi</span>
+
+<span class="n">mg</span><span class="o">.</span><span class="n">say_bye</span>
+
+<span class="w">  </span><span class="c1"># Change to nil</span>
+<span class="w">  </span><span class="n">mg</span><span class="o">.</span><span class="n">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kp">nil</span>
+<span class="w">  </span><span class="n">mg</span><span class="o">.</span><span class="n">say_hi</span>
+<span class="w">  </span><span class="n">mg</span><span class="o">.</span><span class="n">say_bye</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>So:</p>
+<ul>
+<li>Arrays and lists have the same syntax as python (squared brackets)</li>
+<li><code>if...else</code> syntax is similar to python, with <code>elsif</code> instead of <code>elif</code></li>
+<li>Check if something is...<ul>
+<li>...a null: <code>var.nil?</code></li>
+<li>...a list: <code>var.respond_to?("each")</code> or <code>var.respond_to?("join")</code> (a list of strings, in the latter case)</li>
+</ul>
+</li>
+<li>Iterate over something with the <code>var.each do |var|...end</code> syntax: it's equivalent to <code>for var in vars</code> in python</li>
+<li>The <code>if __FILE__ == $0</code> is equivalent to the <code>if __name__ == "__main__"</code> in python and contains the "executable" part of the script</li>
+</ul>
+<p>Execute the script with:</p>
+<div class="highlight"><pre><span></span><code>ruby<span class="w"> </span>script.rb
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
